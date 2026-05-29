@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Artisanal Elegance</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#7b5647",
+                    "surface-bright": "#fdf9f4",
+                    "tertiary": "#002321",
+                    "outline-variant": "#d5c3bd",
+                    "tertiary-fixed-dim": "#abcdc9",
+                    "on-primary-fixed-variant": "#613e31",
+                    "surface-dim": "#ddd9d5",
+                    "secondary-container": "#ffcaca",
+                    "inverse-primary": "#ecbcaa",
+                    "surface-container": "#f1ede8",
+                    "secondary": "#7c5454",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#ffdbce",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#2f1314",
+                    "inverse-on-surface": "#f4f0eb",
+                    "on-background": "#1c1c19",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e6e2dd",
+                    "surface-container-high": "#ebe8e3",
+                    "secondary-fixed-dim": "#edbaba",
+                    "on-secondary-container": "#7b5353",
+                    "on-primary-container": "#bf9282",
+                    "on-tertiary-fixed-variant": "#2c4c49",
+                    "secondary-fixed": "#ffdad9",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#c6eae5",
+                    "on-primary-fixed": "#2e140a",
+                    "on-surface-variant": "#504440",
+                    "on-tertiary-container": "#81a39e",
+                    "surface-container-highest": "#e6e2dd",
+                    "on-secondary": "#ffffff",
+                    "background": "#fdf9f4",
+                    "on-surface": "#1c1c19",
+                    "on-primary": "#ffffff",
+                    "primary": "#32170d",
+                    "outline": "#83746f",
+                    "surface": "#fdf9f4",
+                    "primary-fixed-dim": "#ecbcaa",
+                    "on-secondary-fixed-variant": "#613d3d",
+                    "primary-container": "#4b2c20",
+                    "inverse-surface": "#31302d",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f7f3ee",
+                    "tertiary-container": "#183936",
+                    "on-tertiary-fixed": "#00201e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "section-gap": "120px",
+                    "container-padding-desktop": "80px",
+                    "gutter": "24px",
+                    "container-padding-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"],
+                    "display-lg-mobile": ["EB Garamond"],
+                    "display-lg": ["EB Garamond"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -10px rgba(75, 44, 32, 0.08);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 60px -15px rgba(75, 44, 32, 0.12);
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .testimonial-active {
+            display: block !important;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-xl shadow-sm h-20">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop h-full max-w-[1280px] mx-auto">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed" href="#">Artisanal Elegance</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant/80 hover:text-primary transition-colors duration-300" href="product.html">Products</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary pb-1" href="about.html">About Us</a>
+<button class="bg-primary-container text-on-primary text-label-md px-6 py-3 rounded-lg active:scale-95 transition-all ambient-shadow"><a href="customize.html">
+          Custom Order</a></button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[716px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Artisanal Bakery Heritage" class="w-full h-full object-cover brightness-[0.85]" data-alt="A high-end artisanal bakery interior with soft, warm golden morning light streaming through large windows. The scene features rustic wooden tables dusted with flour and shelves filled with freshly baked golden-brown sourdough loaves. The aesthetic is minimalist and luxurious with a cream and deep chocolate color palette, evoking a sense of calm and heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIdYxhivP1YaVghiDJD1EYTxKq6DWxZjvGehIHc4bXuYigjX-MvU8wrfaFbrYAdJcdEoXkCdcIRLVfA4WyFoJ4HU_FwMDo4BDYuB0QhPizJ-nMA3Uau9uFb6Lq4aIKbtgQkznWaOu2iY78FzjZvwuMPQvuCm4AmhD4PSMMGs7L-803ukcdijFYvSihKPUGjJBqRWcXYwXeqCJMyO-wdLacRiX87LyleOUPx4vaIVTvrVgMpdJYfuec-lVxCdpiZRudqgOm1xN7SnQ"/>
+</div>
+<div class="relative z-10 text-center text-surface-lowest px-container-padding-mobile fade-in">
+<h1 class="font-display-lg text-display-lg md:text-display-lg mb-4 text-white">Our Story</h1>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto text-white/90">A journey through flour, water, and time—crafted with the patience of tradition and the elegance of modern pastry.</p>
+</div>
+</section>
+<!-- Our Heritage -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop py-section-gap max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1">
+<span class="text-label-md text-on-primary-container tracking-widest uppercase mb-4 block">Our Heritage</span>
+<h2 class="font-headline-md text-headline-md mb-6">Born from a passion for the perfect crust.</h2>
+<div class="space-y-6 text-on-surface-variant font-body-md text-body-md">
+<p>Established in 1994, Artisanal Elegance began as a small family oven in the heart of the community. We believed that bread wasn't just food, but a living connection between the earth and our tables.</p>
+<p>Decades later, we maintain the same slow-fermentation processes that defined our first loaf. Every morning at 3:00 AM, our bakers begin the rhythmic ritual of folding, shaping, and scoring—ensuring each piece that leaves our kitchen is a masterpiece of texture and flavor.</p>
+</div>
+</div>
+<div class="order-1 md:order-2 grid grid-cols-2 gap-4">
+<img alt="Baker Hands" class="rounded-xl w-full h-64 object-cover ambient-shadow" data-alt="Close-up of a baker's hands covered in white organic flour, gently kneading a soft, supple ball of dough on a dark marble surface. The lighting is moody and focused, highlighting the texture of the dough and the artisanal process. The surrounding environment is clean and professional with a sophisticated, warm boutique bakery atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8aWIOpCcfVhReJ35pRDpmkpP-DIAU2XhxeC05NjHxavOglZnIGRJM5j3IUKSSHwZx1KTIAUAIsYFJyEl6ccpuJZPSurpwVJtR2sa6C7D-qgU3ihk58BlZt9esdEUAZFhU1shbZhDVZq9oFyxKFjGDvwUQPT1oj4sYfUZNZ9XL6R5HuLIIPoTOSckkDKbhAIVrrE2TZRwM3hMn7e42N2h53g9TpLHnZDQZWr8gzRGLFtGI47XVNNXfYqaAEUrTtVQr0xFUrcxcEp4"/>
+<img alt="Pastries" class="rounded-xl w-full h-64 object-cover mt-8 ambient-shadow" data-alt="A collection of beautifully crafted French pastries including croissants and danishes arranged on a white ceramic platter. The pastries have a glossy, golden-brown finish with intricate layers. The setting is a bright, airy cafe with soft cream-colored surfaces and delicate floral accents, maintaining an editorial and premium visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg4MhJSxXSsBnUD3iHHrmE8dDlV2dnuZs0dUzbMZWJDWQ7zvxu1OawhQJUfWlNRlNalIa-00XCyzfVxceh-36DVMYN3DYBkgXDRo0S-Unu1bWj1yftVU8MYVyDFGjpUEHEiE69lbafUBDsCyYSeDpHBPluAAhkmFS6u6Qw6145G9aA-ZxPaNDX8rmhXcdWzBl4myerLIGmGxYznE_YkirlFM0wpkFD1D9DCs_uaE19991y3O36GFxssoQkqJsZYr6T6ptwIJdvvzI"/>
+</div>
+</div>
+</section>
+<!-- The Master Baker -->
+<section class="bg-surface-container py-section-gap">
+<div class="px-container-padding-mobile md:px-container-padding-desktop max-w-[1280px] mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/3">
+<div class="relative">
+<img alt="Master Baker Julian" class="rounded-xl w-full h-[500px] object-cover ambient-shadow" data-alt="A professional portrait of a master baker in a clean, minimalist white chef's coat. He has a warm, welcoming expression and is standing in a brightly lit modern kitchen. The background is softly blurred, showing glimpses of high-end baking equipment. The image uses a light mode aesthetic with warm beige and deep brown accents to reflect the brand's identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK_S6NhFr-07Of_lifRSBpW6mC7IUu5eHhafsOjuonD2RDLIaKECJZyY3SnrDQqAQZyU-wnePj0YcAQ_zOjMX7C9fQAcl56mARCEySgOhWFdQd0IxljtZkNCxARP0uftXJnt_hONRVK23yksyBu2w36YsM--UJ59KM8gIepScVZj1Plg4xDiL5h427_CPgaeV80oFgCgtFeEkrEg3zNaFCKM-rFaTibzQhn5n4_scjFXIOBcwLZ-d6tPdGKDFwVvYyHHwh-cvVXxs"/>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-lg shadow-xl hidden md:block">
+<span class="text-white font-headline-sm italic text-headline-sm">"Flavor is a memory we bake every day."</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<span class="text-label-md text-on-primary-container tracking-widest uppercase mb-4 block">The Master Baker</span>
+<h2 class="font-headline-md text-headline-md mb-6">Meet Julian Rossi</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">With over 25 years of experience across the finest patisseries in Europe, Julian brings a meticulous eye for detail and a heart for local ingredients to Artisanal Elegance. His philosophy is simple: respect the ingredient, trust the process, and never rush the dough.</p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Philosophy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Purity of ingredients and the slow passage of time are our most valuable tools.</p>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Craft</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Specializing in ancient grains and traditional French laminating techniques.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Ingredients - Bento Grid -->
+<section class="px-container-padding-mobile md:px-container-padding-desktop py-section-gap max-w-[1280px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-display-lg mb-4">The Secret is in the Source</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">We partner with local organic farmers who share our commitment to the land and the quality of every grain.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-surface-container-low p-8 rounded-xl ambient-shadow flex flex-col md:flex-row gap-8 items-center card-hover transition-all">
+<div class="md:w-1/2">
+<h3 class="font-headline-sm text-headline-sm mb-4">Heirloom Grains</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We exclusively use stone-milled heirloom wheat varieties, preserving the nutrients and the complex, nutty flavors lost in industrial processing.</p>
+</div>
+<div class="md:w-1/2">
+<img alt="Organic Wheat" class="w-full h-48 object-cover rounded-lg" data-alt="A macro photograph of organic wheat stalks in a sun-drenched field during the golden hour. The grains are highly detailed, showing their natural texture and golden color. The atmosphere is warm, rural, and evocative of high-quality, sustainable farming practices, fitting the artisanal bakery's commitment to quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB1qohggTQIfK3gqWTMS2NmKhj1fftPap4Z72PPkGsHAoCoOADDxGnKEGE4cK4_R9sLYFD0dvGrnuGRlg8-KFnqZ4KcKiDzx7ml8EmUW_JdHZBIhoJMYr5F2THPs89CnJZmcFbTQHGpZWXfxWs6sVQvsVCz_p8j4TP79uFf7HY1r4gzhTfoeYH_993G7MgknwAzElWD4IZ7bMSdonjAu0OMj7-zecvzYxn9RSkNZy8rPY1cIJIJ8UJIx1ejVBFVoxfZQIIU_4O2BE"/>
+</div>
+</div>
+<div class="bg-secondary-container p-8 rounded-xl ambient-shadow card-hover transition-all flex flex-col justify-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-on-secondary-container">eco</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">100% Organic</h3>
+<p class="font-body-md text-body-md text-on-secondary-container">No pesticides, no additives. Only pure, earth-grown goodness from farm to your hand.</p>
+</div>
+<div class="bg-primary-container p-8 rounded-xl ambient-shadow card-hover transition-all text-white flex flex-col justify-center">
+<span class="material-symbols-outlined text-4xl mb-4">water_drop</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Pure Spring Water</h3>
+<p class="font-body-md text-body-md opacity-90">Mineral-rich water from local springs ensures our yeast thrives and our crust crackles perfectly.</p>
+</div>
+<div class="md:col-span-2 bg-surface-container-high p-8 rounded-xl ambient-shadow flex flex-col md:flex-row-reverse gap-8 items-center card-hover transition-all">
+<div class="md:w-1/2">
+<h3 class="font-headline-sm text-headline-sm mb-4">Grass-Fed Dairy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our butter comes from heritage cows grazing on lush, alpine pastures, resulting in the creamiest, most flavorful croissants you'll ever taste.</p>
+</div>
+<div class="md:w-1/2">
+<img alt="Premium Butter" class="w-full h-48 object-cover rounded-lg" data-alt="A block of premium grass-fed butter sitting on a rustic wooden board next to a small bowl of sea salt. The butter has a deep, rich yellow color indicating high quality. The background is a soft-focus artisanal kitchen with warm lighting and a clean, boutique aesthetic, highlighting the luxury of the ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA52TVbyPAHSd6V8eEq52lVeW58CMacnVLhqmW6AQsDgWiMjodagZirQY7ChXrxKAhXlsd2LK5V0rM7bJamQAP3zQ40f4qNNYzUXWWBYT-R0ol57MV8oK-Bpgi7qKnt8azj1mJbOI4S_zZYoZR6Hf7uxp545iUtTWo6tkW9T0OcAomP1PnYHR72wqd40rHMtdaACnNQSTi0aNZUzSBB54ccl9lF2N1-kptCCcgvAcsSNXPhcimRtVeVO3fXfOU-Mlh-g9pWOv8e38w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Slider -->
+<section class="bg-surface py-section-gap overflow-hidden">
+<div class="px-container-padding-mobile md:px-container-padding-desktop max-w-[1280px] mx-auto">
+<div class="relative bg-surface-container-lowest p-12 md:p-24 rounded-3xl ambient-shadow">
+<div class="relative" id="testimonial-container">
+<!-- Slide 1 -->
+<div class="testimonial-slide testimonial-active transition-opacity duration-500">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary-container text-6xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline-md text-headline-md mb-8 italic">"The moment you walk in, the scent of real bread changes your mood. This isn't just a bakery; it's a sanctuary for quality in a fast-paced world."</p>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="Sarah J." class="w-full h-full object-cover" data-alt="A smiling woman in her 30s with a natural, elegant look, appearing as a satisfied customer. She is in a bright, upscale cafe setting. The lighting is soft and flattering, reflecting the brand's sophisticated and community-focused atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm216G0HSlVJOVG84-svQveyNZvUn9d-EvZoWGiThmBLJ85i4Xnh97nuslX8ve4OZXBJfQO6mjHuV7raBDGQa8YoNSsAF6xno0hLf5ABOnUYw3gDM5Ha3y-9zsCtqJju6QM042kqrCCK86bikMWXdQwN4EvEjoFjRzRfQ5aUGY4yiBHZZWQUu_1y2AX_jUyvP1jQHf6ul8gWL6v8K7afgKO7aV3qZxHy0splmXNBMOw35PPMjXBwlSyq8R31jsKYlgUtjLlipgWZo"/>
+</div>
+<div class="text-left">
+<h5 class="font-label-md text-label-md">Sarah Jenkins</h5>
+<p class="text-on-surface-variant text-sm">Local Food Critic</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="testimonial-slide hidden transition-opacity duration-500">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary-container text-6xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-headline-md text-headline-md mb-8 italic">"Their sourdough has a depth of flavor I haven't found outside of small villages in France. Truly an artisanal gem in our city."</p>
+<div class="flex items-center justify-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden">
+<img alt="Michael R." class="w-full h-full object-cover" data-alt="A portrait of a middle-aged man with a friendly, discerning look, dressed in casual professional attire. He is seated in a cozy, high-end bakery corner with a coffee and pastry. The scene is bright and warm with a focus on a comfortable, high-quality lifestyle." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUgo2nQK1a12knbg60oKwEGw9MiI_jp5nY9z6-joALCSzakJCyuUf4_IGIP2ece79IDMarUid9cHe1JzMIu483oqs5EUrb4e8e6mr3WcYtsN2d3M_0MtoGLxq4Drm5CSPdeUsh9HNpx6_xstHmfaztTbjzq6Ul85Asx-2HZAm9mKUhK6uVmouFgarT_bMymhtpZurxdBItqrp8puUpd-Hh2ovmgN1TsQUhc01yt_zbv5TIdfILeuIS_LMDvifY3A_SOHPas-v4I4s"/>
+</div>
+<div class="text-left">
+<h5 class="font-label-md text-label-md">Michael Russo</h5>
+<p class="text-on-surface-variant text-sm">Chef &amp; Restaurateur</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation -->
+<div class="flex justify-center gap-4 mt-12">
+<button class="p-2 rounded-full border border-outline hover:bg-primary hover:text-white transition-colors" onclick="prevTestimonial()">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-2 rounded-full border border-outline hover:bg-primary hover:text-white transition-colors" onclick="nextTestimonial()">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-8 bg-surface-container dark:bg-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-container-padding-mobile md:px-container-padding-desktop max-w-[1280px] mx-auto">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Artisanal Elegance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Elevating the daily ritual of bread and pastry through timeless craft and organic purity.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-4 uppercase tracking-widest">Connect</h4>
+<div class="flex flex-col gap-2">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="font-body-md text-body-md text-primary font-bold" href="#">Order Now</a>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-4 uppercase tracking-widest">Visit Us</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">124 Baker Street, Flour District<br/>Open Daily: 7:00 AM — 4:00 PM</p>
+</div>
+</div>
+<div class="mt-16 text-center border-t border-outline-variant pt-8">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Artisanal Elegance Bakery. Handcrafted with love.</p>
+</div>
+</footer>
+<script>
+        // Simple Testimonial Slider Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.add('hidden'));
+            slides[index].classList.remove('hidden');
+        }
+
+        function nextTestimonial() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevTestimonial() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance
+        setInterval(nextTestimonial, 8000);
+
+        // Simple Fade on Scroll implementation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body></html>

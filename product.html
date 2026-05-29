@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | Artisanal Elegance Bakery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 40px -15px rgba(75, 44, 32, 0.08);
+        }
+        .ambient-shadow:hover {
+            box-shadow: 0 30px 60px -12px rgba(75, 44, 32, 0.12);
+        }
+        .product-card-img {
+            transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card:hover .product-card-img {
+            transform: scale(1.05);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "surface-tint": "#7b5647",
+                "surface-bright": "#fdf9f4",
+                "tertiary": "#002321",
+                "outline-variant": "#d5c3bd",
+                "tertiary-fixed-dim": "#abcdc9",
+                "on-primary-fixed-variant": "#613e31",
+                "surface-dim": "#ddd9d5",
+                "secondary-container": "#ffcaca",
+                "inverse-primary": "#ecbcaa",
+                "surface-container": "#f1ede8",
+                "secondary": "#7c5454",
+                "on-error-container": "#93000a",
+                "primary-fixed": "#ffdbce",
+                "on-error": "#ffffff",
+                "error": "#ba1a1a",
+                "on-secondary-fixed": "#2f1314",
+                "inverse-on-surface": "#f4f0eb",
+                "on-background": "#1c1c19",
+                "on-tertiary": "#ffffff",
+                "surface-variant": "#e6e2dd",
+                "surface-container-high": "#ebe8e3",
+                "secondary-fixed-dim": "#edbaba",
+                "on-secondary-container": "#7b5353",
+                "on-primary-container": "#bf9282",
+                "on-tertiary-fixed-variant": "#2c4c49",
+                "secondary-fixed": "#ffdad9",
+                "error-container": "#ffdad6",
+                "tertiary-fixed": "#c6eae5",
+                "on-primary-fixed": "#2e140a",
+                "on-surface-variant": "#504440",
+                "on-tertiary-container": "#81a39e",
+                "surface-container-highest": "#e6e2dd",
+                "on-secondary": "#ffffff",
+                "background": "#fdf9f4",
+                "on-surface": "#1c1c19",
+                "on-primary": "#ffffff",
+                "primary": "#32170d",
+                "outline": "#83746f",
+                "surface": "#fdf9f4",
+                "primary-fixed-dim": "#ecbcaa",
+                "on-secondary-fixed-variant": "#613d3d",
+                "primary-container": "#4b2c20",
+                "inverse-surface": "#31302d",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-low": "#f7f3ee",
+                "tertiary-container": "#183936",
+                "on-tertiary-fixed": "#00201e"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "base": "8px",
+                "section-gap": "120px",
+                "container-padding-desktop": "80px",
+                "gutter": "24px",
+                "container-padding-mobile": "20px"
+            },
+            "fontFamily": {
+                "headline-sm": ["EB Garamond"],
+                "headline-md": ["EB Garamond"],
+                "display-lg-mobile": ["EB Garamond"],
+                "display-lg": ["EB Garamond"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "body-md": ["Plus Jakarta Sans"],
+                "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop h-20 max-w-[1280px] mx-auto">
+<span class="font-headline-md text-headline-md text-primary">Artisanal Elegance</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 transition-colors duration-300" href="product.html">Products</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors duration-300" href="about.html">About Us</a>
+</div>
+<button >
+               <a class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-label-md text-label-md active:scale-95 transition-transform hover:opacity-90" href="customize.html">
+          Custom Order</a>
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap">
+<!-- Hero Header -->
+<header class="max-w-[1280px] mx-auto px-container-padding-mobile md:px-container-padding-desktop text-center mb-16">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-4">Our Collections</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Explore our curated selection of fine pastries and bespoke cakes, handcrafted daily with the world's finest ingredients.
+            </p>
+</header>
+<!-- Category Filter -->
+<div class="max-w-[1280px] mx-auto px-container-padding-mobile md:px-container-padding-desktop mb-12">
+<div class="flex items-center justify-center gap-4 overflow-x-auto pb-4 no-scrollbar">
+<button class="px-6 py-2 rounded-full border border-primary bg-primary text-white font-label-md text-label-md whitespace-nowrap transition-all shadow-sm">
+                    All Collections
+                </button>
+<button class="px-6 py-2 rounded-full border border-outline-variant hover:border-primary text-on-surface-variant hover:text-primary font-label-md text-label-md whitespace-nowrap transition-all">
+                    Signature Cakes
+                </button>
+<button class="px-6 py-2 rounded-full border border-outline-variant hover:border-primary text-on-surface-variant hover:text-primary font-label-md text-label-md whitespace-nowrap transition-all">
+                    Pastries
+                </button>
+<button class="px-6 py-2 rounded-full border border-outline-variant hover:border-primary text-on-surface-variant hover:text-primary font-label-md text-label-md whitespace-nowrap transition-all">
+                    Seasonal Specials
+                </button>
+<button class="px-6 py-2 rounded-full border border-outline-variant hover:border-primary text-on-surface-variant hover:text-primary font-label-md text-label-md whitespace-nowrap transition-all">
+                    Gift Boxes
+                </button>
+</div>
+</div>
+<!-- Product Grid -->
+<section class="max-w-[1280px] mx-auto px-container-padding-mobile md:px-container-padding-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product 1 -->
+<div class="product-card group flex flex-col bg-white rounded-xl overflow-hidden ambient-shadow transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Signature Chocolate Cake" class="product-card-img w-full h-full object-cover" data-alt="A luxurious multi-layered dark chocolate cake with smooth ganache frosting, topped with gold leaf flakes and fresh raspberries. Set on a marble pedestal in a sunlit, minimalist bakery with warm cream-toned walls. The lighting is soft and natural, emphasizing the rich texture of the chocolate and the delicate gold accents. High-end, artisanal food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk7V6bMdJIjWjJ1IWcKcaHkp2HiigegiaEg1DuiIwfUXDCWzEz_qOtII6v2ag2OcsCC3NzDR4ZuTl5DFdb9YChgierV0altV78kLN0wk2PoL3mYZNyFW3cX_Ae1Qy8r4hARyAXuL-CElriXZHPZBni1FRag74jTZHGcwwpZ4skiSJ13cJuym7G2MF5BBTA1Xlt-M-nh4Ve6_w3Lk6Mw4unU94U59yHYXblGNa--cN4zMr196stixhgIjo3347ZWkElllPkAQNvp4E"/>
+<div class="absolute top-4 right-4">
+<span class="bg-surface/90 backdrop-blur-md text-primary font-label-md text-label-md px-3 py-1 rounded-full border border-white/20">Signature</span>
+</div>
+</div>
+<div class="p-8 text-center flex flex-col flex-grow items-center">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Valrhona Noir Cake</h3>
+<p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">$85.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-2">
+                            Intense 70% dark chocolate layers paired with salted caramel and espresso-infused cream.
+                        </p>
+<button class="mt-auto border-b border-primary text-primary font-label-md text-label-md pb-1 hover:opacity-70 transition-opacity uppercase tracking-wider">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card group flex flex-col bg-white rounded-xl overflow-hidden ambient-shadow transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Artisanal Pastries Selection" class="product-card-img w-full h-full object-cover" data-alt="An assortment of golden, flaky butter croissants and pain au chocolat arranged on a linen cloth. The scene is illuminated by soft morning light, highlighting the delicate, layered texture of the pastry dough. The background features a sophisticated palette of cream and warm beige, maintaining a luxury artisanal aesthetic. Subtle shadows add depth to the warm, inviting composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQHplqDYrZTgEegYB32BsgUfqo2YQVA0WZFyKmmlMVMhgDpEqOU9ay9TCFC7I4thgfUO1p-Cb8YLxi27GQCWK5MioIaLu3PhILUmfHxqNxwE9RXXPLWbXO8kaMNgTCkKATswl-09-rXghIbewjk6pPdWkg3OfHpQn_x9wNjghNoO9TVkwxJHokBj1kBbYYR-MuT_g3wR5q4tb1hWSjJELkOShMZspFxhFJQ5p_oxxbvcUUghS8R8-tu-jSqitaRBNA5rXGZdFhYGU"/>
+</div>
+<div class="p-8 text-center flex flex-col flex-grow items-center">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Classic Butter Croissants</h3>
+<p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">$18.00 / Box of 4</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-2">
+                            Slow-fermented for 72 hours using DOP butter from Normandy for unparalleled flakiness.
+                        </p>
+<button class="mt-auto border-b border-primary text-primary font-label-md text-label-md pb-1 hover:opacity-70 transition-opacity uppercase tracking-wider">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card group flex flex-col bg-white rounded-xl overflow-hidden ambient-shadow transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Gift Boxes Collection" class="product-card-img w-full h-full object-cover" data-alt="A minimalist, premium gift box made of heavy cream-colored cardstock with a deep chocolate brown ribbon. Inside are rows of colorful, artisan macarons in shades of pastel pink, pistachio green, and lavender. The lighting is airy and high-key, reflecting a modern boutique bakery feel. The composition is elegant and balanced, focusing on the tactile quality of the packaging and sweets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZj0794EnXpKzSPLHnJ7fKJh03wSkGQGV_eU58K42Zerd49ByodoR0MTBctnT2pmio0JB4urtpABowj2T2kLf8FY4ZdgAc67jEjQxJ9lNabHweXwGnonGea__3iKanJMoc2mbiPINy-KVLn2kqMyo22UsbiNQSJV9A9sOa_frksnVLZV4wwywtU8QdZO_EzckdSwEdh6vHH4GnBBknwqYEujzpf1xAgsiR_dH3i-iAgijh2WHMGORXHJRzACGn5TZn0eZTHD-xRXE"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary/90 backdrop-blur-md text-white font-label-md text-label-md px-3 py-1 rounded-full">New Arrival</span>
+</div>
+</div>
+<div class="p-8 text-center flex flex-col flex-grow items-center">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">The Heritage Box</h3>
+<p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">$65.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-2">
+                            A curated selection of our twelve most beloved macarons and seasonal shortbreads.
+                        </p>
+<button class="mt-auto border-b border-primary text-primary font-label-md text-label-md pb-1 hover:opacity-70 transition-opacity uppercase tracking-wider">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="product-card group flex flex-col bg-white rounded-xl overflow-hidden ambient-shadow transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Seasonal Special Tart" class="product-card-img w-full h-full object-cover" data-alt="A delicate fruit tart with a buttery, shortcrust base, filled with vanilla bean custard and topped with precisely arranged fresh figs and honey drizzle. The background is a soft-focus artisanal kitchen with light wood surfaces and copper accents. The overall mood is warm, seasonal, and highly refined, utilizing a palette of deep purples, golds, and warm creams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtSCDB9rl6EVGSGKvg9RYBQc1MFELvqbSE1G8_cE-8l4m4AOJpW-HBOFeFs3ud2wiR4TMvvyT2XHlMer9W6IUnX4qVOYJzaAElJFB5Hnh9RLQEnKwa97jD9aU4ztYPx-mTXjAUZv-qbEfq_Nio5knUu2kmdGAimze4e4Sa0bjZJHketmlmKY2tGdtvfxvPoJxK1JWYYDd8Jqu26s9bPdPb-8XHKfjguOib4xUEJfR_xkCYgH-7HyzC4rANCo7ub-ap-Rcq1C0gmEg"/>
+</div>
+<div class="p-8 text-center flex flex-col flex-grow items-center">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Honeyed Fig Tart</h3>
+<p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">$42.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-2">
+                            Fresh autumn figs on a bed of Madagascar vanilla custard and honey-glazed almond crust.
+                        </p>
+<button class="mt-auto border-b border-primary text-primary font-label-md text-label-md pb-1 hover:opacity-70 transition-opacity uppercase tracking-wider">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="product-card group flex flex-col bg-white rounded-xl overflow-hidden ambient-shadow transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Sourdough Selection" class="product-card-img w-full h-full object-cover" data-alt="A rustic yet elegant display of freshly baked sourdough bread loaves on a wooden cooling rack. The loaves feature intricate scoring patterns and a perfectly browned, crispy crust dusted with flour. The background is a clean, contemporary bakery with soft ambient lighting that highlights the earthy textures and natural tones of the bread. Minimalist and sophisticated presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtRefHdyqv1oK_4YGQbVuvs2q1cYjIZcBXydkT1jSqpGqaOQGwtRVfdbMWxSzP4Cqu7G6jI81h7Zv2IIisKd3Ns0-CHWDSJ-MN5BNPIEagEVC2ubAQ64DzgjfUZlpuVn0rBnaOD6Y-9MowDgJ4o30fkvYF4xuvbvXZNoB3xcJgN2cpahJlu3jhZaqDLmYVbjx6SGjSXbt0Fi-CxRIEhJPbxJtr69S9N8n7HRrGoDJV6NY0WMe-pvdiuwRyAxTKFdL5O4ea7Nt6vfU"/>
+</div>
+<div class="p-8 text-center flex flex-col flex-grow items-center">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Heirloom Sourdough</h3>
+<p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">$12.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-2">
+                            Wild yeast starter aged for 50 years, giving a complex depth of flavor and airy crumb.
+                        </p>
+<button class="mt-auto border-b border-primary text-primary font-label-md text-label-md pb-1 hover:opacity-70 transition-opacity uppercase tracking-wider">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="product-card group flex flex-col bg-white rounded-xl overflow-hidden ambient-shadow transition-all duration-500">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Gift Macaron Set" class="product-card-img w-full h-full object-cover" data-alt="Close up of three perfectly formed macarons in soft pastel colors stacked vertically against a neutral cream background. The texture of the macaron shells is visible, showing a delicate matte finish and characteristic ruffled feet. Lighting is soft and diffused, creating a serene and luxurious feel. The color palette consists of soft blush pink, pale mint, and ivory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJO8kkpIBUoGOMQOyh_SF4Q0dPDd6mOtPO2ONX_br1jN80LLhoP3isKepOIIkHEL4Ejqm4L7-g7LhBFeRNhS8XMjGJZcLn0l0iHuZJ9gQwAADQYSfcNIy1nVhwRsY79QoMmZEubd2BrXaxI2vbJs_4Vj1tUta2y4nJljNcdlUh52b8gOxd2gPufadz5N7Osx28lK1eRX0NsLE85y6-qRuKdViFD-3BF9nY0xBPJnUQ0_CdHQptymaiOIR3GgMrHnKaRi7Dp8kd1Wk"/>
+</div>
+<div class="p-8 text-center flex flex-col flex-grow items-center">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Petite Macaron Set</h3>
+<p class="font-label-md text-label-md text-secondary mb-4 uppercase tracking-widest">$32.00</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 line-clamp-2">
+                            Six delicate macarons featuring seasonal floral and spice infusions.
+                        </p>
+<button class="mt-auto border-b border-primary text-primary font-label-md text-label-md pb-1 hover:opacity-70 transition-opacity uppercase tracking-wider">
+                            View Details
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-[1280px] mx-auto px-container-padding-mobile md:px-container-padding-desktop mt-section-gap">
+<div class="bg-surface-container rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Stay in the Loop</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Join our exclusive mailing list to receive invitations to tasting events and early access to seasonal collections.
+                    </p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow bg-surface border-none rounded-lg px-6 py-3 font-body-md text-body-md focus:ring-1 focus:ring-primary outline-none placeholder:text-outline-variant" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors" type="submit">
+                            Subscribe
+                        </button>
+</form>
+</div>
+<!-- Artistic decoration -->
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-8 bg-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-container-padding-mobile md:px-container-padding-desktop max-w-[1280px] mx-auto">
+<div class="space-y-4">
+<span class="font-headline-sm text-headline-sm text-primary block">Artisanal Elegance</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Redefining the art of pastry through traditional techniques and modern luxury aesthetics.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest">Connect</h4>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Pinterest</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-primary uppercase tracking-widest">Inquiries</h4>
+<div class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Order Now</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">FAQs</a>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/30 text-center max-w-[1280px] mx-auto px-container-padding-mobile">
+<p class="font-body-md text-body-md text-on-surface-variant/60">
+                © 2024 Artisanal Elegance Bakery. Handcrafted with love.
+            </p>
+</div>
+</footer>
+<script>
+        // Micro-interaction: Active category filter toggling
+        const filterButtons = document.querySelectorAll('button.rounded-full');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-primary', 'text-white', 'shadow-sm');
+                    b.classList.add('border-outline-variant', 'text-on-surface-variant');
+                });
+                btn.classList.add('bg-primary', 'text-white', 'shadow-sm');
+                btn.classList.remove('border-outline-variant', 'text-on-surface-variant');
+                btn.classList.add('border-primary');
+            });
+        });
+
+        // Simple smooth entrance animation for cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(card);
+        });
+    </script>
+</body></html>
